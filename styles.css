@@ -1,0 +1,100 @@
+*,
+::before,
+::after {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("./images/bg-desktop.svg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+}
+
+nav .logo {
+  margin: 40px;
+  height: 100%;
+  max-width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.main h1,
+p {
+  color: white;
+}
+
+.main h1 {
+  max-width: 600px;
+  line-height: 50px;
+  font-size: 50px;
+}
+
+.main p {
+  max-width: 500px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.illustration {
+  height: 100%;
+  max-width: 100%;
+  min-width: 300px;
+  /* margin-left: -450px; */
+}
+
+input {
+  color: hsl(300, 69%, 71%);
+  border: white 1px solid;
+  padding: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  scale: 1.3;
+  margin-top: 20px;
+}
+
+input:hover {
+  color: white;
+  border-color: hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
+  animation-name: hovering;
+  animation-duration: 0.2s;
+}
+
+@keyframes hovering {
+  0% {
+    border-color: white;
+    background-color: white;
+  }
+  25% {
+    border-color: hsl(300, 53%, 84%);
+    background-color: hsl(300, 53%, 84%);
+  }
+  50% {
+    border-color: hsl(300, 73%, 75%);
+    background-color: hsl(300, 73%, 75%);
+  }
+  100% {
+    border-color: hsl(300, 69%, 71%);
+    background-color: hsl(300, 69%, 71%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main h1,
+  p {
+    font-size: 30px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+}
